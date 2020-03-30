@@ -24,6 +24,32 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.register(nib, forCellReuseIdentifier: "TaskTableViewCell")
     }
     
+    // タスク追加ボタンをタップした時の処理
+    @IBAction func addTaskButton(_ sender: UIBarButtonItem) {
+        let alertController = UIAlertController(title: "タスク追加", message: "追加するタスクを入力してください", preferredStyle: .alert)
+        
+        // アラートダイアログに追加するOKボタン
+        // OKボタンをタップした時の処理はクロージャで実装
+        let oKAlertAction = UIAlertAction(title: "OK", style: .default) {[weak alertController] (action) in
+            if let inputText = alertController?.textFields?[0].text, inputText.count > 0 {
+                print("入力あり：\(inputText)")
+            } else {
+                print("入力なし")
+            }
+        }
+        // アラートダイアログに追加するキャンセルボタン
+        let cancelAlertAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
+        
+        // 各パーツをUIAlertControllerに追加
+        alertController.addTextField(configurationHandler: nil)
+        alertController.addAction(oKAlertAction)
+        alertController.addAction(cancelAlertAction)
+        
+        // アラートダイアログを表示する
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    
     // UITableViewDataSourceのdelegateメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // 仮実装としてTableViewに表示するセルの数を5としています (セクションの数はデフォルト1となっています)
