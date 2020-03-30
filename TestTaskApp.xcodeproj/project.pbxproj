@@ -13,6 +13,8 @@
 		4C7D237C243185960003A324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D237A243185960003A324 /* Main.storyboard */; };
 		4C7D237E243185990003A324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D237D243185990003A324 /* Assets.xcassets */; };
 		4C7D2381243185990003A324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D237F243185990003A324 /* LaunchScreen.storyboard */; };
+		4C7D238A24318B270003A324 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D238824318B270003A324 /* TaskTableViewCell.swift */; };
+		4C7D238B24318B270003A324 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D238924318B270003A324 /* TaskTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4C7D237D243185990003A324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C7D2380243185990003A324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C7D2382243185990003A324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C7D238824318B270003A324 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		4C7D238924318B270003A324 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				4C7D237D243185990003A324 /* Assets.xcassets */,
 				4C7D237F243185990003A324 /* LaunchScreen.storyboard */,
 				4C7D2382243185990003A324 /* Info.plist */,
+				4C7D238824318B270003A324 /* TaskTableViewCell.swift */,
+				4C7D238924318B270003A324 /* TaskTableViewCell.xib */,
 			);
 			path = TestTaskApp;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7D238B24318B270003A324 /* TaskTableViewCell.xib in Resources */,
 				4C7D2381243185990003A324 /* LaunchScreen.storyboard in Resources */,
 				4C7D237E243185990003A324 /* Assets.xcassets in Resources */,
 				4C7D237C243185960003A324 /* Main.storyboard in Resources */,
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C7D238A24318B270003A324 /* TaskTableViewCell.swift in Sources */,
 				4C7D2379243185960003A324 /* ViewController.swift in Sources */,
 				4C7D2375243185960003A324 /* AppDelegate.swift in Sources */,
 				4C7D2377243185960003A324 /* SceneDelegate.swift in Sources */,
