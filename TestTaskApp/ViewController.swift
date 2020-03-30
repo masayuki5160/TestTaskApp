@@ -56,10 +56,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 5
     }
 
-    // UITableViewDataSourceのdelegateメソッド
+    // UITableViewDataSourceのdelegateメソッド.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 作成したオリジナルのTableViewCellを利用
         let cell = tableView.dequeueReusableCell(withIdentifier: "TaskTableViewCell", for: indexPath)
         return cell
+    }
+    
+    // UITableViewDataSourceのdelegateメソッド. セルをタップした時の処理. 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alertController = UIAlertController(title: "タスク完了", message: "タスクを完了しますか？", preferredStyle: .alert)
+        let okAlertAction = UIAlertAction(title: "完了", style: .default) { (action) in
+            print("タスク完了")
+        }
+        let cancelAlertAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
+        
+        // 各パーツをalertControllerに追加していく
+        alertController.addAction(okAlertAction)
+        alertController.addAction(cancelAlertAction)
+        
+        // タスク完了ダイアログの表示
+        present(alertController, animated: true, completion: nil)
     }
 }
