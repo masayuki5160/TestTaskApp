@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         alertController.addAction(cancelAlertAction)
         
         // アラートダイアログを表示する
-        self.present(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
     
     
@@ -63,7 +63,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    // UITableViewDataSourceのdelegateメソッド. セルをタップした時の処理. 
+    // UITableViewDataSourceのdelegateメソッド. セルをタップした時の処理.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let alertController = UIAlertController(title: "タスク完了", message: "タスクを完了しますか？", preferredStyle: .alert)
         let okAlertAction = UIAlertAction(title: "完了", style: .default) { (action) in
