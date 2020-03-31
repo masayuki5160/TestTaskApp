@@ -26,6 +26,7 @@
                 <constraints>
                     <constraint firstItem="4jl-ch-oXd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Bqy-96-uta"/>
                     <constraint firstItem="4jl-ch-oXd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Z9W-sd-oJc"/>
+                    <constraint firstAttribute="bottom" secondItem="4jl-ch-oXd" secondAttribute="bottom" constant="11.5" id="kDt-NW-JUp"/>
                     <constraint firstAttribute="trailing" secondItem="4jl-ch-oXd" secondAttribute="trailing" constant="16" id="pG9-KW-dc6"/>
                 </constraints>
             </tableViewCellContentView>
